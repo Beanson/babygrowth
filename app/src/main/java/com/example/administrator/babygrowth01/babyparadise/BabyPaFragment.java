@@ -279,6 +279,9 @@ public class BabyPaFragment extends Fragment implements View.OnClickListener {
 //                .commit();
         //
 
+
+
+        //dala haha
         Intent intent=new Intent(getActivity(), GameMouseHit.class);
         getActivity().startActivity(intent);
     }
