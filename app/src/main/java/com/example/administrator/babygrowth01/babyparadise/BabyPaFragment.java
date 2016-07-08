@@ -134,9 +134,9 @@ public class BabyPaFragment extends Fragment implements View.OnClickListener {
 
     /**
      * insert customer information to database by http protocol and save to sharedPreferences
-     * @param cus_account
-     * @param cus_password
-     * @param editor
+     * @param cus_account customer account
+     * @param cus_password customer password
+     * @param editor editor
      */
     public void insertDBGetId(final String cus_account,final String cus_password,final SharedPreferences.Editor editor){
         final RequestQueue requestQueue= Volley.newRequestQueue(activity);
@@ -159,7 +159,7 @@ public class BabyPaFragment extends Fragment implements View.OnClickListener {
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                HashMap<String,String> map=new HashMap<String,String>();
+                HashMap<String,String> map=new HashMap<>();
                 map.put("cus_account",cus_account);
                 map.put("cus_password",cus_password);
                 return map;
@@ -281,7 +281,11 @@ public class BabyPaFragment extends Fragment implements View.OnClickListener {
 
 
 
+
         //dala haha
+
+//add some others
+
         Intent intent=new Intent(getActivity(), GameMouseHit.class);
         getActivity().startActivity(intent);
     }
