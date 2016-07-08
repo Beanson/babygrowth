@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.administrator.babygrowth01.personalInfo.PersonalInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bg_header"
+            android:src="@drawable/person_info_bg"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/person_portrait"
+            android:src="@drawable/demo"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="165dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:id="@+id/divide01"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/person_portrait"
+            android:background="@color/colorRaiseBar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:text="账号信息    2920248385"
+            android:layout_below="@+id/divide01"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <View
+            android:id="@+id/divide02"
+            android:layout_below="@id/tv_account"
+            android:background="@color/colorRaiseBar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_babyInfo"
+            android:text="宝宝信息"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/divide02"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:id="@+id/ly_babyInfo"
+            android:layout_below="@id/tv_babyInfo"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_below="@id/ly_babyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

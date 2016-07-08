@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.babygrowth01.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/MainFragment"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+        <!-- the bar to select and change fragment with different function -->
+        <LinearLayout
+            android:id="@+id/bottom_menu"
+            android:background="#d8d8d8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <!-- baby paradise selection view -->
+            <LinearLayout
+                android:id="@+id/ly_baby_paradise"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#f0f0f0"
+                android:layout_marginTop="1dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/baby_paradise"
+                    android:src="@drawable/paradise"
+                    android:layout_width="22dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="宝宝乐园"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <!-- baby growth record selection fragment -->
+            <LinearLayout
+                android:id="@+id/lv_baby_record"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:background="#f0f0f0"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/baby_growth_record"
+                    android:src="@drawable/record"
+                    android:layout_width="22dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="添加日记"
+                    android:textColor="@color/colorBlack"
+                    android:paddingLeft="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- baby food selection fragment -->
+            <LinearLayout
+                android:id="@+id/ly_baby_food"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#f0f0f0"
+                android:layout_marginTop="1dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/family_food"
+                    android:src="@drawable/rice"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="聚餐"
+                    android:textColor="@color/colorBlack"
+                    android:paddingLeft="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- content after left flip-->
+    <include android:id="@+id/main1"
+        layout="@layout/activity_personal_info"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="80dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_baby_recipe_portrait"
+        android:src="@drawable/baby_demo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp" />
+
+    <TextView
+        android:id="@+id/baby_recipe_name"
+        android:text="姓名"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/iv_baby_recipe_portrait"
+        android:layout_alignLeft="@+id/iv_baby_recipe_portrait"
+        android:layout_alignRight="@+id/iv_baby_recipe_portrait"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/baby_recipe_age"-->
+        <!--android:text="年龄"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:layout_toRightOf="@+id/iv_baby_recipe_portrait"-->
+        <!--android:layout_below="@+id/baby_recipe_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+</RelativeLayout>

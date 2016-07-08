@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorBabyPaBack">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_course"
+            android:layout_margin="5dp"
+            android:src="@drawable/clothes"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/tv_course_name_mark"
+            android:text="名称："
+            android:textColor="@color/colorBlue"
+            android:layout_toRightOf="@+id/iv_course"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:text="龟兔赛跑"
+            android:layout_toRightOf="@id/iv_course"
+            android:layout_below="@+id/tv_course_name_mark"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_course_learn_mark"
+            android:text="道理："
+            android:textColor="@color/colorBlue"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_course"
+            android:layout_below="@+id/tv_course_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_course_learn"
+            android:text="教导诚实守信，遵纪守法"
+            android:layout_toRightOf="@+id/iv_course"
+            android:layout_below="@+id/tv_course_learn_mark"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:src="@drawable/make3d"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <TextView
+        android:id="@+id/tv_3dhead"
+        android:text="3D Model DIV"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/iv_header"
+        android:textColor="@color/colorBlue"
+        android:background="@color/colorRaiseBar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <View
+        android:id="@+id/model_div_bar"
+        android:layout_below="@+id/tv_3dhead"
+        android:background="@color/colorRaiseBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <!-- great model display -->
+    <LinearLayout
+        android:id="@+id/ll_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/model_div_bar"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/make01"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/make02"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/make03"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/model_div_bar2"
+        android:background="@color/colorRaiseBar"
+        android:layout_below="@id/ll_model"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <!-- following about take video, pic from gallery and tutorial-->
+    <ImageView
+        android:id="@+id/take_video"
+        android:src="@drawable/camera"
+        android:layout_below="@+id/model_div_bar2"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:text="录像"
+        android:layout_below="@+id/take_video"
+        android:layout_alignLeft="@+id/take_video"
+        android:layout_alignRight="@+id/take_video"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/gallery_pic"
+        android:src="@drawable/gallery"
+        android:layout_below="@id/ll_model"
+        android:layout_toRightOf="@+id/take_video"
+        android:layout_margin="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:text="媒体"
+        android:layout_below="@id/gallery_pic"
+        android:layout_alignLeft="@+id/gallery_pic"
+        android:layout_alignRight="@+id/gallery_pic"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_tutorial"
+        android:src="@drawable/helper"
+        android:layout_below="@id/ll_model"
+        android:layout_toRightOf="@+id/gallery_pic"
+        android:layout_margin="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:text="教程"
+        android:layout_below="@id/iv_tutorial"
+        android:layout_alignLeft="@+id/iv_tutorial"
+        android:layout_alignRight="@+id/iv_tutorial"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

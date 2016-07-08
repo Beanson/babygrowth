@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/songs_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:paddingTop="25dp"
+            android:paddingLeft="15dp"
+            android:layout_weight="1"
+            android:id="@+id/songs_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/play_songs"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/download_songs"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:id="@+id/delete_songs"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp" />-->
+    </LinearLayout>
+
+
+    <View
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

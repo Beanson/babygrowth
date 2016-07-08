@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.babygrowth01">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyResource"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".babyrecords.Main.Child_Time_Record_Activity" />
+        <activity android:name=".babyrecords.Main.AddBabyActivity" />
+        <activity android:name=".babyparadise.story.TellStoryActivity" />
+        <activity android:name=".familydish.DishListActivity" />
+        <activity
+            android:name=".babyparadise.playing_game.FoxBar.PlayGameActivity01"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".babyparadise.playing_game.HitMouse.GameMouseHit"
+            android:screenOrientation="landscape" />
+
+        <!-- media player is a common class for playing music -->
+        <activity
+            android:name=".Common.MediaPlayer.MediaPlayActivity"
+            android:screenOrientation="landscape" />
+        <!-- and the following activity are set to be landscape automatically -->
+
+        <activity
+            android:name=".babyparadise.toyMall.Obj3DView"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Common.Test"
+            android:screenOrientation="portrait">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".babyparadise.baby_health.BabyHealthActivity" />
+        <activity android:name=".Test.Test" />
+        <activity android:name=".personalInfo.PersonalInfoActivity" />
+        <activity android:name=".babyparadise.babyRecipe.BabyRecipeActivity" />
+        <activity android:name=".babyparadise.babyRecipe.loadRecipeDetail.BabyRecipeDetailActivity" />
+        <activity android:name=".babyparadise.make3D.Make3DActivity" />
+        <activity android:name=".babyparadise.market.Market"/>
+    </application>
+
+</manifest>

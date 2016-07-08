@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="rv_tag_1"/>
+    <item type="id" name="rv_tag_2"/>
+    <item type="id" name="rv_tag_3"/>
+
+    <!-- for dish use-->
+    <item name="dish_id" type="id"/>
+    <item name="dish_name" type="id"/>
+    <item name="dish_thumbnail_uri" type="id"/>
+    <item name="dish_stuff" type="id"/>
+    <item name="dish_step" type="id"/>
+    <item name="dish_video_uri" type="id"/>
+
+    <item name="dish_adapt" type="id"/>
+    <item name="sub_dish" type="id"/>
+    <item name="dish_chosen_mark" type="id"/>
+
+    <!-- about playing games-->
+    <item name="game_uri" type="id"/>
+    <item name="game_id" type="id"/>
+
+    <!-- about activities publish-->
+    <item name="fun_id" type="id"/>
+    <item name="fun_website" type="id"/>
+
+    <!-- about expert suggestion-->
+    <item name="expert_suggest_uri" type="id"/>
+</resources>

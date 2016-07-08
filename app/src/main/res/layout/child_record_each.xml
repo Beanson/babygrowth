@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/item_record"
+    android:background="@color/colorBabyPaBack"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:text="30/12"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/border_2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/twins"
+                android:id="@+id/iv_pic"
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:layout_width="0dp"
+            android:gravity="top"
+            android:textSize="15sp"
+            android:textColor="#1c1e29"
+            android:hint="  taking notes for recording the taking notes "
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

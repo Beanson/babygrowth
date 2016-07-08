@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dish_location">
+        <item>粤菜</item>
+        <item>川菜</item>
+        <item>鲁菜</item>
+        <item>苏菜</item>
+        <item>浙菜</item>
+        <item>闽菜</item>
+        <item>湘菜</item>
+        <item>徽菜</item>
+    </string-array>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- user name-->
+        <TextView
+            android:id="@+id/tv_buyer"
+            android:text="订餐人："
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@+id/buyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/buyer"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_buyer"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- user phone-->
+        <TextView
+            android:id="@+id/tv_user_phone"
+            android:text="联系电话："
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/buyer"
+            android:layout_marginTop="10dp"
+            android:layout_alignBaseline="@+id/user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/user_phone"
+            android:layout_below="@+id/buyer"
+            android:layout_toRightOf="@+id/tv_user_phone"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!-- address for receive goods-->
+        <TextView
+            android:id="@+id/tv_receive_good"
+            android:text="请填写收货地址："
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/user_phone"
+            android:layout_alignBaseline="@+id/dish_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- edit text for writing the -->
+        <EditText
+            android:id="@+id/dish_location"
+            android:layout_below="@+id/user_phone"
+            android:layout_toRightOf="@+id/tv_receive_good"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- text view to write the order time-->
+        <TextView
+            android:id="@+id/tv_send_time"
+            android:text="送餐时间："
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignBaseline="@+id/tv_order_time"
+            android:layout_below="@+id/dish_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/tv_order_time"
+            android:text="11:30"
+            android:layout_below="@+id/dish_location"
+            android:layout_toRightOf="@+id/tv_send_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/dish_submit"
+            android:text="确认订单"
+            android:background="@color/colorDishBlue"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+
+    <!-- text view to write the address for receiving  dish-->
+
+
+    <!-- here we will place the dishes ordered -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dish_address_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

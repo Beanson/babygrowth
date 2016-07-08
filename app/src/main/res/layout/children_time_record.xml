@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBabyPaBack"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/all">
+
+    <RelativeLayout
+        android:id="@+id/ImageFullLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/picasso_bar_2"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:id="@+id/ImageFull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <include android:id="@+id/edit" layout="@layout/child_record_text" android:visibility="gone"/>
+
+    <HorizontalScrollView
+        android:background="@color/colorGreen"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/ll_portrait_recipe">
+
+            <!-- baby demo -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_demo"
+                    android:src="@drawable/baby_demo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+                <TextView
+                    android:text="Demo"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- add baby -->
+            <LinearLayout
+                android:id="@+id/ll_portrait"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+           <!-- add child image view -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pic_add"
+                android:src="@drawable/add_baby_2"
+                android:layout_width="65dp"
+                android:layout_height="65dp" />
+
+            <TextView
+                android:text="添加"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- the camera tool -->
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="今天"
+            android:id="@+id/tv_today"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- camera -->
+        <LinearLayout
+            android:id="@+id/ly_camera"
+            android:layout_toRightOf="@+id/tv_today"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/camera"
+                android:layout_margin="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <!-- gallery -->
+        <LinearLayout
+            android:id="@+id/ly_gallery"
+            android:layout_toRightOf="@+id/ly_camera"
+            android:background="@drawable/border_2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/gallery"
+                android:layout_margin="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_below="@id/ly_gallery"
+            android:background="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+
+    </RelativeLayout>
+
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/refresh_record"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_record_overall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.yalantis.phoenix.PullToRefreshView>
+
+
+    <!--<Button
+        android:id="@+id/buttontest"
+        android:text="test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+</LinearLayout>

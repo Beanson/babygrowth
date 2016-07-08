@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/edit_portrait"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <EditText
+        android:hint="  Record the precious time"
+        android:id="@+id/edit_text"
+        android:textSize="20sp"
+        android:textColor="#1c1e29"
+        android:layout_below="@+id/edit_portrait"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/edit_submit"
+        android:text="确认"
+        android:layout_below="@id/edit_text"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

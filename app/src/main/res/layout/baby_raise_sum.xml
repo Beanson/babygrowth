@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:scrollbars="none"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:scrollbars="none"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- something about the weather report -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <!-- whether icon -->
+            <ImageView
+                android:src="@drawable/weather"
+                android:id="@+id/iv_weather"
+                android:layout_marginRight="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <!-- about the data -->
+            <TextView
+                android:text="今天：2016-11-18"
+                android:id="@+id/tv_data"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- about the temperature and -->
+            <TextView
+                android:text="天气：晴；温度：20-25摄氏度"
+                android:id="@+id/tv_weather"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_weather"
+                android:layout_below="@+id/tv_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly_show_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- about the clothes -->
+
+        <RelativeLayout
+            android:background="@color/colorDishBlue"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/closed"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:text="衣着搭配"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_show_clothes"
+            android:src="@drawable/raise_clothes"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <!--about the food-->
+        <TextView
+            android:text="饮食均衡"
+            android:gravity="center"
+            android:background="@color/colorDishBlue"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/iv_show_food"
+            android:src="@drawable/raise_food"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/life_tip"
+        android:background="@color/colorDishBlue"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/iv_open"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/opened"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:text="生活小贴士"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+
+    <!-- expert suggestion-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/expert_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+<!--</ScrollView>-->

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/media_show_all">
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/media_control"
+        android:background="@color/colorProgressBar"
+        android:layout_alignBottom="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/play_stop"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:paddingLeft="20dp"
+            android:layout_alignTop="@+id/play_stop"
+            android:layout_toRightOf="@+id/play_stop"
+            android:layout_toLeftOf="@+id/mark"
+            android:paddingBottom="10dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:text="00:12/12:00"
+            android:id="@+id/textView_time"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@+id/play_stop"
+            android:layout_below="@+id/seek_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mark"/>
+    </RelativeLayout>
+</RelativeLayout>
