@@ -277,6 +277,7 @@ public class BabyPaFragment extends Fragment implements View.OnClickListener {
 //                .addToBackStack(null)
 //                .replace(R.id.MainFragment, new GamesListFragment())
 //                .commit();
+        //
 
         Intent intent=new Intent(getActivity(), GameMouseHit.class);
         getActivity().startActivity(intent);
