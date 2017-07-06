@@ -34,13 +34,13 @@ public class OssClass {
 
     private OSS oss;
     // 运行sample前需要配置以下字段为有效的值
-    private static final String endpoint = "http://oss-cn-shenzhen.aliyuncs.com";
-    private static final String accessKeyId = "q4pjxqabACHK2WE5";
-    private static final String accessKeySecret = "yF3L6IbHTma6QbgfopLcJ4JF2cvSbJ";
+    private static final String endpoint = ";
+    private static final String accessKeyId = "";
+    private static final String accessKeySecret = "";
     private String uploadFilePath = "";
-    private static final String testBucket = "android-bucket";  /* bucket name*/
-    private String uploadObject = "BabyGrowth/UserGrowthRecord/";
-    private static final String downloadObject = "sampleObject";
+    private static final String testBucket = "";  /* bucket name*/
+    private String uploadObject = "";
+    private static final String downloadObject = "";
     private Context context; //the type in detail is getApplicationContext()
 
     public OssClass(Context context){
